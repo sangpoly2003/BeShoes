@@ -1,0 +1,119 @@
+<!-- res/layout/item_shoe.xml -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0"
+    android:orientation="horizontal">
+
+    <!-- Cột 1: Ảnh giày -->
+    <ImageView
+        android:id="@+id/imageShoe"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/bee"
+        android:layout_weight="3"
+        android:scaleType="centerCrop" />
+
+    <!-- Cột 2: Thông tin giày -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="7"
+        android:paddingLeft="15dp">
+
+        <!-- Tên giày -->
+        <TextView
+            android:id="@+id/textShoeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Giày MLD"/>
+
+        <!-- Loại giày và Size -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textShoeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Size : "/>
+
+            <TextView
+                android:id="@+id/textShoeSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="41"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="13dp"
+          android:orientation="horizontal"
+          >
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_marginStart="0dp"
+              android:text="-"
+              android:background="@drawable/btn_sl"
+              />
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:text="1"
+              android:background="@drawable/btn_sl"
+              />
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:text="+"
+              android:background="@drawable/btn_sl"
+              />
+      </LinearLayout>
+        <!-- Số lượng và Giá -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/thanhtien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="13dp"
+                android:textColor="#EF0606"
+                android:text="Thành tiền : "/>
+            <TextView
+                android:id="@+id/gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginTop="13dp"
+                android:textColor="#EF0606"
+                android:text="300000VND "/>
+
+    </LinearLayout>
+</LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_chucNang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_handle"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"/>
+</LinearLayout>
